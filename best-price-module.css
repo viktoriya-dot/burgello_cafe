@@ -1,0 +1,87 @@
+.best-price {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.best-prise__dish1-img img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block;
+
+}
+.best-prise__dish1-img, .best-prise__dish1-description{
+  flex: 1 1 50%;
+
+}
+.best-prise__dish2,
+.best-prise__dish3,
+.best-prise__dish4 {
+  flex: 1 1 33%;
+}
+.best-price h2 {
+  letter-spacing: 4.8px;
+}
+.best-price p{
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  line-height: 2.1em;
+  letter-spacing: 1.4px;
+  color: #333333;
+}
+.best-price .fa-star {
+  color: orange;
+  margin-right: 22px;
+  font-size: 12px;
+}
+.best-prise__dish1-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 80%;
+}
+
+.burgers-no-margin {
+  margin: 0;
+}
+
+.best-prise__icon {
+  padding-left: 25%;
+}
+
+.icon-wrap p {
+  text-transform: uppercase;
+  margin-top: 0.1rem;
+}
+.big-price-tag, .currency-tag {
+  color: var(--tint-color);
+}
+
+.big-price-tag {
+  font-size: 1.8rem;
+}
+
+.addbest-prise__dish {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-color: var(--tint-color);
+  color: white;
+  font-size: 24px;
+}
+.addbest-prise__dish:hover {
+  color: var(--tint-color);
+  background-color: #333333;
+}
+
+@media only screen and (max-width: 800px) {
+  .best-prise__dish1-description {
+      flex-direction: column;
+  }
+}

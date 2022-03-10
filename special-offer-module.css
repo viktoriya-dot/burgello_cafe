@@ -1,0 +1,99 @@
+.cafe-offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #333333;
+}
+
+.cafe-offers--hours, .cafe-offers--special {
+  margin-right: 30px;
+}
+
+.cafe-offers--hours,
+.cafe-offers--special,
+.cafe-offers--firstorder {
+  position: relative;
+}
+
+.cafe-offers--hours,
+.cafe-offers--firstorder {
+  flex: 1 1;
+}
+
+.cafe-offers--special {
+  flex: 2 1;
+}
+
+.cafe-offers img {
+  width: 100%;
+  height: auto;
+}
+
+.happy-img {
+  position: absolute;
+  position: relative;
+  z-index: 2;
+  left: 10%;
+  top: -35%
+}
+
+.hours {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.cafe-offers .happy-img {
+  width: 50%;
+
+}
+.cafe-offers h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-family: var(--main-font), Sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6.8px;
+}
+
+.special-offer-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50%;
+  top: 10%;
+  left: 20%;
+  text-align: center;
+}
+
+.special-offer {
+  font-size: 1.5rem;
+  letter-spacing: 8px;
+}
+
+.buy-offer {
+  font-family: var(--main-font);
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #333333;
+}
+
+.buy-offer-description {
+  font-family: var(--font-second), Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.firstorder-description {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 60%;
+  height: auto;
+  top: 5%;
+  left: 10%;
+}

@@ -1,0 +1,195 @@
+.header__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__phone {
+    margin-left: 0.5rem;
+}
+
+.header__phone::before {
+    content:'\f879';
+    display: inline;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: orange;
+}
+
+.header__phone, .header__address {
+    padding-top: 1.8rem;
+}
+.logo {
+    padding-bottom: 0;
+}
+.header__address {
+    font-family: var(--main-font);
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.header__address::before {
+    content:'\f3c5';
+    display: inline;
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    color: orange;
+}
+
+.header__nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    z-index: 20;
+  }
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0.5rem 0 0 0;
+    padding-left: 12rem;
+    flex: 1 1 70%;
+}
+
+.header__menu a {
+    font-family: var(--main-font);
+    margin-right: 1rem;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1.9px;
+    line-height: 19.2px;
+}
+
+.header__menu {
+    position: relative;
+}
+
+.dropdown:after {
+    content:'\f078';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    margin-left: 0.25rem;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    top: 1.6rem;
+    left: -24rem;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.dropdown__layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #fff;
+    flex-basis: 100%;
+}
+
+.dropdown__layout-item {
+    flex-basis: 100%;
+}
+
+.social-links {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    flex: 1;
+
+}
+
+.social-links span,
+.search-cart span {
+    padding-right: 1rem;
+}
+
+.search-cart {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.fa-search {
+    border-right: 1px solid gray;
+}
+
+.fa-shopping-bag {
+    margin-left: 1rem;
+}
+
+.shopping-bag-items {
+    border-radius: 50%;
+    color: var(--tint-color);
+    display: inline-block;
+}
+.social-links span:hover,
+.search-cart span:hover {
+    color: var(--tint-color);
+}
+
+.drop:hover .dropdown__content {
+    display: block;
+}
+
+@media only screen and  (max-width: 1000px) {
+
+    .header__contacts {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__phone {
+        order: 1;
+        margin-left: 0;
+        font-weight: 600;
+
+    }
+
+    .header__address {
+        order: 2;
+    }
+
+    .header__phone,
+    .header__address {
+        padding-top: 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .header__nav {
+        flex-wrap: wrap;
+        padding-left: 0.5rem;
+    }
+
+    .header__nav {
+        flex: 1 1 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}

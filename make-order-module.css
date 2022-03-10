@@ -1,0 +1,43 @@
+.make-order {
+  display: flex;
+  background-color: #f6f7f9;
+  font-family: var(--main-font);
+}
+
+.make-order > * {
+  flex: 2 2 100%;
+}
+.make-order__row {
+  padding: 1rem 2rem;
+}
+
+.make-order h3 {
+  font-family: var(--main-font);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 1.1em;
+  letter-spacing: 3.4px;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.make-order p {
+  text-align: left;
+  font-family: var(--font-second), Sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  line-height: 2em;
+  letter-spacing: 1.3px;
+  padding-left: 2rem;
+}
+
+.make-order__img {
+  display: inline-block;
+  position: absolute;
+  margin-left: 0.5rem;
+  top: -0.5rem;
+  font-family: var(--main-font);
+}

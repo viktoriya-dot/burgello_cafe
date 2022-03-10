@@ -1,0 +1,82 @@
+:root {
+  font-size: 20px;
+   -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+  --tint-color: #ffc139;
+  --secondary-color: #8f8f8f;
+  --buttons-hover-color: #fff;
+  --main-font: 'Oswald', sans-serif;
+  --font-second: 'Montserrat',sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+header,
+section,
+footer {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--tint-color);
+}
+
+li  {
+  list-style-type: none
+}
+
+h2 {
+  font-family: var(--main-font);
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 3.6px;
+}

@@ -1,0 +1,86 @@
+.contacts {
+  word-wrap: break-word;
+  flex-wrap: no-wrap;
+}
+.contacts__insta  {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contacts > * {
+  flex: 1 1 33%;
+}
+
+.contacts h3 {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 2.4px;
+}
+
+.contacts p {
+  font-family: var(--font-second);
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  line-height: 1.4rem;
+  letter-spacing: 1.2px;
+}
+
+.contacts__social-links {
+  margin-top: 1rem;
+}
+
+.contacts-social-links__items {
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contacts-social-links__items span:hover {
+  color: var(--tint-color);
+}
+
+.subscribe-form {
+  width: 417px;
+  padding: 13px 50px 13px 20px;
+  border-radius: 23px 23px 23px 23px;
+  background-color: rgba(0,0,0,0);
+  color: #333333;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  line-height: 1.6em;
+  letter-spacing: 1.1px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #e5e5e5;
+}
+
+.subscribe-form__field {
+  position: relative;
+}
+
+.subscribe-form__btn {
+  position: absolute;
+  right: 8%;
+  top: 28%;
+}
+
+.map {
+  height: 450px;
+}
+
+.contacts__contact-us .fa {
+  font-size: 1.2rem;
+  color: var(--tint-color);
+  line-height: 1.2rem;
+  padding-right: 1rem;
+}
+
+.subscribe-form__btn:hover {
+  color: var(--tint-color);
+}
