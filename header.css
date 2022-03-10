@@ -92,22 +92,22 @@
     display: none;
     position: absolute;
     top: 1.6rem;
-    left: -24rem;
+    left: 0;
     z-index: 10;
     background-color: #fff;
 }
-
+/*
 .dropdown__layout {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     background-color: #fff;
     flex-basis: 100%;
-}
+} */
 
-.dropdown__layout-item {
+/* .dropdown__layout-item {
     flex-basis: 100%;
-}
+} */
 
 .social-links {
     display: flex;
@@ -150,6 +150,16 @@
 
 .drop:hover .dropdown__content {
     display: block;
+}
+
+.dropdown__layout {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: #fff;
+    padding: 5px 55px;
+
 }
 
 @media only screen and  (max-width: 1000px) {
